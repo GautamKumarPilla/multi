@@ -4,8 +4,9 @@
 // // import Arth from './Arth';
 // import Countriesproj from "./Countriesproj";
 // import logo from './logo.svg';
-import './App.css';
-import { Link, Outlet } from 'react-router-dom';
+// import './App.css';
+// import { Link, Outlet } from 'react-router-dom';
+import Form from "./Form";
 
 function App() {
   return (
@@ -20,10 +21,11 @@ function App() {
       {/* <Arth></Arth> */}
       {/* <Products></Products> */}
       <div>
-        <div  className={'d-flex flex-wrap border border-5 m-2 p-2 bg-warning'}><Link to={"/products"}> Products</Link>&nbsp;&nbsp;&nbsp;
+        {/* <div  className={'d-flex flex-wrap border border-5 m-2 p-2 bg-warning'}><Link to={"/products"}> Products</Link>&nbsp;&nbsp;&nbsp;
       <Link to={"/countries"} >Countries</Link><br/></div>
-      <Outlet></Outlet>
+      <Outlet></Outlet> */}
        {/* <Countriesproj/> */}
+       <Form/>
 </div>
     </div>
     
