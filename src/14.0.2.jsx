@@ -6,15 +6,20 @@ function Todolists(props){
     }
     );
 function don(){
-   don.className='bg-success'
+  // if(onclick.value==='true'){
+    
+  // }
 }
+function und(){
+
+} 
  return(
-    <div className="border border-2 bg-success d-flex justify-content">
+    <div className="border border-3 border-info">
         <li>
             {props.t}
-            <button onClick={don}>Done</button>&nbsp;&nbsp;
-            <button >Undone</button>&nbsp;&nbsp;
-            <button className="btn btn-outline-info" onClick={()=>{props.delTodo(props.i)}}>Delete</button>&nbsp;&nbsp;
+            <button onClick={don} className="btn btn-outline-dark">Done</button>&nbsp;&nbsp;
+            <button onClick={und} className="btn btn-outline-dark">Undone</button>&nbsp;&nbsp;
+            <button className="btn btn-outline-dark" onClick={()=>{props.delTodo(props.i)}}>Delete</button>&nbsp;&nbsp;
         </li>
     </div>
  )

@@ -18,8 +18,9 @@ function Todolist(){
     },[todos.length])
      
     return(
-        <div className='border border-3 m-2 p-2 border-success'>
-        <h1>Todolist</h1> <h1>Status<input type="radio" name="com" id="co"/>:Completed  <input type="radio" name="uncom" id="unco"/>:Not-Completed</h1>
+        <div>
+         <h1 style={{textAlign:'right'}}>Status<input type="radio" name="com" value="co"/>:Completed  <input type="radio" name="com" value="unco"/>:Not-Completed</h1>
+         <h1>Todolist</h1>
         <input type="text" onChange={handleNewTodo} className='border border-2 rounded border-warning p-2'/>
         <button onClick={addTodo} className='btn btn-outline-primary rounded p-2'>Add Todo</button>
         <ul>

@@ -6,7 +6,7 @@ import Todolist from './14.0.1';
 
 function App() {
   return (
-    <div>
+    <div className="border border-info bg-success">
       <Todolist/>
     </div>
   );
