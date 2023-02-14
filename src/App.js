@@ -3,10 +3,9 @@ import React from 'react';
 import './App.css';
 import Todolist from './14.0.1';
 
-
 function App() {
   return (
-    <div className="border border-info bg-success">
+    <div className="border border-info">
       <Todolist/>
     </div>
   );
