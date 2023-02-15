@@ -1,32 +1,32 @@
-import React,{useEffect} from "react";
+import React from "react";
 
 function Todolists(props){
-    // useEffect(() =>{
-    //   // console.log(props.t)
-    // }
-    // );
+  const[state,setState] = React.useState([])
+    
 function don(){
    <div>
     {
-       console.log (props.t)
-       (<h1 className="bg-success">{props.t}</h1>)
+       setState([...state,props.t])
+    //  (<div className="bg-success">{props.t}</div>)
     }
    </div>
+   console.log(state)
 }
 function und(){
   <div className="bg-danger">
     {
-       console.log (props.t)
+       setState([...state,props.t])
     }
    </div>
+   console.log(state)
 } 
  return(
-    <div className="border border-3 border-info p-1 my-2 w-75">
+    <div className="d-flex border border-3 border-info p-1 my-2 w-25">
         <li>
-            {props.t}
-            <button onClick={don} className="btn btn-outline-secondary">Done</button>&nbsp;&nbsp;
-            <button onClick={und} className="btn btn-outline-secondary">Undone</button>&nbsp;&nbsp;
-            <button className="btn btn-outline-secondary" onClick={()=>{props.delTodo(props.i)}}>Delete</button>&nbsp;&nbsp;
+            {props.t}&nbsp;
+            <button onClick={don} className="btn btn-light">Done</button>&nbsp;&nbsp;
+            <button onClick={und} className="btn btn-light">Undone</button>&nbsp;&nbsp;
+            <button className="btn btn-light" onClick={()=>{props.delTodo(props.i)}}>Delete</button>&nbsp;&nbsp;
         </li>
     </div>
  )
