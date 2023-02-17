@@ -6,7 +6,8 @@
 // import logo from './logo.svg';
 // import './App.css';
 // import { Link, Outlet } from 'react-router-dom';
-import Form from "./Form";
+// import Form from "./Form";
+import Products from "./Products";
 
 function App() {
   return (
@@ -19,13 +20,13 @@ function App() {
       {/* <Countries></Countries> */}
       {/* <Todolist></Todolist> */}
       {/* <Arth></Arth> */}
-      {/* <Products></Products> */}
+      <Products></Products>
       <div>
         {/* <div  className={'d-flex flex-wrap border border-5 m-2 p-2 bg-warning'}><Link to={"/products"}> Products</Link>&nbsp;&nbsp;&nbsp;
       <Link to={"/countries"} >Countries</Link><br/></div>
       <Outlet></Outlet> */}
        {/* <Countriesproj/> */}
-       <Form/>
+       {/* <Form/> */}
 </div>
     </div>
     
