@@ -41,12 +41,13 @@ function Todolist(){
     }
     function com(a){
       if(a.target.checked===true){
-        setTodos((todos.filter(i=>a.target.value)))
+        setTodos((todos.filter(i=>a.target.checked)))
         console.log(a)
       }
     }
     function ncom(c){
-      setTodos((todos.filter(i=>i.toLowerCase().startsWith(c.target.value))))
+      if(c.target.checked===true){
+      setTodos((todos.filter(i=>c.target.checked))) }
     }
     return(
         <div>
