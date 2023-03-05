@@ -13,14 +13,18 @@ function Blog() {
         setNewpost({...newpost,author:a.target.value})
     }
     function addPost(){
-        setPosts([...posts,newpost])
+        setPosts([...posts,{...newpost,date:Date.now()}])
+    }
+    function getDate(d){
+        var postDate = new Date(d);
+        return postDate.toDateString()                  
     }
   return (
     <div>
             <div className='border border-3 rounded border-warning p-2 m-2 d-flex align-items-center justify-content-center'>
          <div>
         <textarea style={{verticalAlign:'middle'}} rows='4' cols='44' placeholder='Post your blog here' onChange={handleThought}></textarea>&nbsp;<br></br>
-        <input type="text" size="42" placeholder='Enter pictures url here' onChange={handleUrl}/>
+        <input type="text" size="42" placeholder='Enter pictures url here' onChange={handleUrl}/><br/>
         <input type="text" placeholder='Blog watermark' onChange={handleAuthor}/>
         </div>
         <button className='btn btn-outline-success' onClick={addPost}>Click to post</button>
@@ -34,7 +38,8 @@ function Blog() {
                     <img src={post.url} alt="" className='w-25 border border-2 p-2 m-2'/>
                    <div>
                     <i>{post.author}</i>
-                    <p>{post.thought}</p>
+                      <h6>{getDate(post.date)}</h6>
+                     <p>{post.thought}</p>
                    </div>
                 </li>
             })
