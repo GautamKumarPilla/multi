@@ -20,7 +20,7 @@ function Cart() {
       billItems:cartItems
     }
     addBill(bill).then((res)=>{
-      alert("Paid No")
+      alert("Payment Done!")
       dispatch(reset())
     }).catch(()=>{})
   }
@@ -32,7 +32,7 @@ function Cart() {
           return(<div className='d-flex flex-wrap justify-content-between'>
           <div className='w-75'>{item.strMeal}</div>
           <div className='w-25 text-end'>{item.price}</div>
-          <hr />
+          <hr/>
 
         </div>)
         })
