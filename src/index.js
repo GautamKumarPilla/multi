@@ -4,41 +4,31 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
-import Home from './Components/Home';
-import Billing from './features/Billing/Billing';
-import Sales from './features/Sales/Sales';
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App></App>,
-    children:[
-      {
-        path:'/billing',
-        element:<Billing></Billing>
-      },
-      {
-        path:'/home',
-        element:<Home></Home>
-      },
-      {
-        path:'/sales',
-        element:<Sales></Sales>
-      },
-      {
-        path:'/',
-        element:<Home></Home>
-      }
-    ]
-  },
-]);
+    createBrowserRouter,
+    RouterProvider,
+  } from "react-router-dom";
+import AddFoodItem from './features/FoodItems/AddFoodItem';
+import FoodItems from './features/FoodItems/Fooditems';
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <App></App>,
+      children:[
+        {
+            path:'/addFoodItem',
+            element:<AddFoodItem></AddFoodItem>
+        },
+        {
+            path:'/foodItems',
+            element:<FoodItems></FoodItems>
+        }
+      ]
+    }
+    
+  ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
