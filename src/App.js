@@ -11,6 +11,7 @@ function App() {
         <Outlet></Outlet>
       </div>
     </Provider>
+    
   );
 }
 
