@@ -3,11 +3,34 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import '../node_modules/bootstrap/dist/js/bootstrap.min'
+import '../node_modules/bootstrap/dist/js/bootstrap.min';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from './Components/Home';
+import Billing from './features/Billing/Billing';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element:<App></App>,
+    children:[
+      {
+        path:"/home",
+        element:<Home></Home>
+      },
+      {
+        path:"/billing",
+        element:<Billing></Billing>
+      }
+    ]
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <App/> 
+  <RouterProvider router={router} />
 ); 
 
 // If you want to start measuring performance in your app, pass a function
