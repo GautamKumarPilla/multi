@@ -9,6 +9,7 @@ import {
   } from "react-router-dom";
 import AddFoodItem from './features/FoodItems/AddFoodItem';
 import FoodItems from './features/FoodItems/Fooditems';
+//import Sales from './features/Sales/Sales';
   const router = createBrowserRouter([
     {
       path: "/",

@@ -17,7 +17,7 @@ import todolistReducer from '../features/Todolist/todolistSlice';
 import billReducer from '../features/Bill/billSlice'
 import { countriesApi } from "../services/countries";
 import { productApi } from "../services/product";
-import { foodItemsApi } from '../services/fooditems'
+import { foodItemsApi } from '../services/fooditems';
 
 export const store = configureStore({
   reducer:{

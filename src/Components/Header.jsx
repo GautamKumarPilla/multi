@@ -25,7 +25,7 @@ function Header() {
             </ul>
             <form className="d-flex">
               <input className="form-control me-2" type="text" placeholder="Search" />
-              <button className="btn btn-outline-danger" type="button">Search</button>
+              <button className="btn btn-outline-success" type="button">Search</button>
             </form>
           </div>
         </div>
