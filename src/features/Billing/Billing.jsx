@@ -1,9 +1,12 @@
 import React from 'react'
+import Cart from '../Cart/Cart'
+import FoodItems from '../Food/FoodItems'
 
 function Billing() {
   return (
-    <div>
-        <h1>Billing</h1>
+    <div className='d-flex flex-wrap'>
+        <FoodItems></FoodItems>
+        <Cart></Cart>
     </div>
   )
 }
