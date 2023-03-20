@@ -1,6 +1,7 @@
 import './App.css';
 // import Todo from './Todo';
 import Blog from './Blog';
+//import Todolist from './Todolist';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Todo></Todo> */}
       <h1>Bloggers Prime</h1>
        <Blog></Blog>
+       {/* <h1></h1>
+       <Todolist></Todolist> */}
     </div>
   );
 }
