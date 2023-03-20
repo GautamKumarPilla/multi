@@ -1,6 +1,6 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css'
+@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
 
-/* body {
+body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -12,4 +12,20 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}  */
+}
+
+.strike { 
+  position:relative;
+}
+.strike::after {
+  content:' ';
+  position:absolute;
+  width:1px;
+  height:1px;
+  animation: strike 1s forwards;
+  top: 50%; left: 0px; 
+}
+@keyframes strike { 
+  0%   {background: red;}
+  100% {width:100%;background: black;} 
+}
