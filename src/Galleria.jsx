@@ -3,7 +3,7 @@ import axios from 'axios';
 import Gallery from './Gallery';
 
 const apiKey = "636e1481b4f3c446d26b8eb6ebfe7127";
-const App = () => {
+const Galleria = () => {
   const [data,setData] = useState([]);
   const [search,setSearch] = useState("");
   useEffect(()=>{
@@ -30,7 +30,7 @@ const App = () => {
         <h2>Galleria Snaps !!</h2><br></br>
         <form onSubmit={submitHandler}>
           <input size="30" type="text" onChange={changeHandler} value={search}/><br /><br />
-          <input type="submit" name="Search" />
+          <input type="submit" name="Search" className='btn btn-outline-dark'/>
         </form>
         <br />
         {data.length>=1?<Gallery data={data}/>:<h4 className='text-danger'>No Image Loaded</h4>}
@@ -39,4 +39,4 @@ const App = () => {
   )
 }
 
-export default App;
+export default Galleria;
