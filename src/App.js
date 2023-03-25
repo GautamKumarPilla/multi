@@ -1,10 +1,10 @@
 import './App.css';
-import Galleria from './Galleria';
+import Weather from './Weather/Weather';
 
 function App() {
   return (
     <div>
-      <Galleria></Galleria>
+      <Weather></Weather>
     </div>
   );
 }

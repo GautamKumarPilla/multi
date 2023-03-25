@@ -14,9 +14,20 @@ code {
     monospace;
 } 
 
-img{
-  margin: 10px;
-}
 input{
   border-radius: 5px;
+}
+
+.card{
+  max-width: 50%;
+  padding: 70px;
+}
+input[type="submit"]{
+  background-color: lightslategrey;
+  border-radius:3px;
+  padding: 5px;
+}
+input[type="text"]{
+  border-radius: 3px;
+  padding: 5px;
 }
