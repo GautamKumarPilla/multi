@@ -1,10 +1,17 @@
 import './App.css';
-import Weather from './Weather/Weather';
+//import Emoji from './Emoji/Emoji';
+//import Music from './MusicApp/Music';
+import Pages from './Pagination/Pages';
+//import Timer from './Timer/Timer';
+//import Sign from './SignIn/Sign';
+//import Health from './covid/Covid';
+//import Food from './Food-Recipe/Food';
+// import Weather from './Weather/Weather';
 
 function App() {
   return (
     <div>
-      <Weather></Weather>
+      <Pages></Pages>
     </div>
   );
 }

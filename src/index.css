@@ -1,4 +1,4 @@
-@import '../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+@import '../node_modules//bootstrap/dist/css/bootstrap.min.css';
 
 body {
   margin: 0;
@@ -14,20 +14,51 @@ code {
     monospace;
 } 
 
-input{
+/* input{
   border-radius: 5px;
+  margin-top: 10px;
+  size: 30px;
+}
+h4{
+  margin:10px;
 }
 
 .card{
-  max-width: 50%;
-  padding: 70px;
+  margin:10px
+} */
+/* body {                        //TIMER
+  background-color:skyblue;
+  font-family:"Courier New", Courier, monospace;
 }
-input[type="submit"]{
-  background-color: lightslategrey;
-  border-radius:3px;
-  padding: 5px;
+table tbody tr th{
+  background-color:black;
+  color:white;
+  padding:10px 10px 10px 10px;
+  font-size: 35px;
+  margin-right: 100px;
 }
-input[type="text"]{
-  border-radius: 3px;
-  padding: 5px;
+table tbody tr td{
+  font-weight: bold;
+  padding-top: 10px;
+  margin-right: 100px;
+} */
+ .card{                           /* Emoji */
+  max-width: 90%;
+  margin:20px;
+}
+input{
+  border-radius: 5px;
+}
+.post{
+  border: 2px solid lightgrey;
+  margin: 5px;
+  border-radius: 5px;
+}
+.pagebutton{                    /* Pagination */
+  display: inline-block;
+  background-color: silver;
+  padding:0px 5px 0px 5px;
+  margin: 3px;
+  border: 2px solid;
+  border-radius: 5px;
 }
