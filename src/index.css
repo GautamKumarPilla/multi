@@ -42,11 +42,11 @@ table tbody tr td{
   padding-top: 10px;
   margin-right: 100px;
 } */
- .card{                           /* Emoji */
+ /* .card{                           // Emoji 
   max-width: 90%;
   margin:20px;
-}
-input{
+} */
+/* input{
   border-radius: 5px;
 }
 .post{
@@ -54,11 +54,49 @@ input{
   margin: 5px;
   border-radius: 5px;
 }
-.pagebutton{                    /* Pagination */
+.pagebutton{                        // Pagination 
   display: inline-block;
   background-color: silver;
   padding:0px 5px 0px 5px;
   margin: 3px;
   border: 2px solid;
   border-radius: 5px;
+} */
+
+/* body{                       // Movies
+  background-color: beige;
+}
+input[type="text"] {
+  border-radius: 5px;
+  size: 30px;
+  padding: 5px;
+}
+input[type="submit"]{
+  border-radius: 40%;
+}
+.card {
+  margin:10px;
+}
+img{
+  max-height: 300px;
+}
+.btn:hover{
+  background-color: royalblue;
+} */
+input[type="text"] {
+  padding:10px;
+  margin:10px;
+  border-radius: 2px;
+}
+.item{
+  border:2px solid lightblue;
+  border-radius:3px;
+  margin: 10px;
+  padding:5px;
+}
+.card{
+  margin: 0px;
+}
+.badge{
+  cursor: pointer;
 }
