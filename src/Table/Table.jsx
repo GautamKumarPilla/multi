@@ -1,7 +1,39 @@
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 
 const Table = () => {
-    <table>
+    const [first, setFirst] = useState([]);
+    const [last, setLast] = useState([]);
+    const [age, setAge] = useState([]);
+    const [gender, setGender] = useState([]);
+
+  //let tab = document.getElementById('tab');
+   const submitHandler = (z) =>{
+        z.preventDefault();
+   }
+   const addDetails = (z) => {
+      
+   }
+  return (
+    <div>
+      <form onSubmit={submitHandler}><br/>
+        <label htmlFor="">Firstname: </label>&nbsp;&nbsp;
+        <input type="text" name="firstname" onChange={(a)=>setFirst(a.target.value)} value={first}/><br /><br />
+        <label htmlFor="">Lastname: </label>&nbsp;&nbsp;
+        <input type="text" name="lastname" onChange={(a)=>setLast(a.target.value)} value={last}/><br /><br />
+        <label htmlFor="">Age: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="number" name="age" onChange={(a)=>setAge(a.target.value)} value={age}/><br /><br />
+        <label htmlFor="">Gender: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <select name="gender" id="" onChange={(a)=>setGender(a.target.value)} value={gender}>
+            <option value="" disabled>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br /><br />
+        <input type="submit" value="Add Details" className='btn btn-outline-success' onClick={addDetails}/>
+      </form>
+      <br />
+     <div>
+     <center>
+     <table id="table" style={{}}>
         <thead>                 
             <tr>
                 <td>Firstname</td>
@@ -12,13 +44,17 @@ const Table = () => {
         </thead>
         <tbody>
             <tr>
-                <td></td>
+                <td>{first}</td>
+                <td>{last}</td>
+                <td>{age}</td>
+                <td>{gender}</td>
             </tr>
         </tbody>
-    </table>
-  return (
-    <div>                  
-            
+    </table><br />
+     <input type="radio" name="gender" value="male"/> :Male &nbsp;&nbsp;
+     <input type="radio" name="gender" value="female"/> :Female
+     </center>
+     </div>
     </div>
   )
 }

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+table, th, td {
+  border: 3px inset lightgreen;
+  border-collapse: collapse;
+  padding: 15px;
+}
+th, td {
+  background-color: #96D4D4;
+}
