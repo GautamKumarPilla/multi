@@ -1,4 +1,4 @@
-import React,{useEffect, useState} from 'react';
+import React,{useState} from 'react';
 
 const Table = () => {
     const [first, setFirst] = useState([]);
@@ -7,11 +7,21 @@ const Table = () => {
     const [gender, setGender] = useState([]);
 
   //let tab = document.getElementById('tab');
+  let row = document.getElementById('td');
    const submitHandler = (z) =>{
         z.preventDefault();
    }
-   const addDetails = (z) => {
-      
+   const addDetails = () => {
+      first.map(firstname => <td>{firstname}</td> )
+      last.map(lastname => <td>{lastname}</td>)
+      age.map(age => <td>{age}</td>)
+      gender.map(gender =><td>{gender}</td>)
+   }
+   const maleFilter = () =>{
+        
+   }
+   const femaleFilter = () =>{
+    
    }
   return (
     <div>
@@ -23,7 +33,7 @@ const Table = () => {
         <label htmlFor="">Age: </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <input type="number" name="age" onChange={(a)=>setAge(a.target.value)} value={age}/><br /><br />
         <label htmlFor="">Gender: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <select name="gender" id="" onChange={(a)=>setGender(a.target.value)} value={gender}>
+        <select name="gender" id="" onChange={(a)=>setGender(a.target.value)} value='gender'>
             <option value="" disabled>Select Gender</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
@@ -44,15 +54,21 @@ const Table = () => {
         </thead>
         <tbody>
             <tr>
-                <td>{first}</td>
+                <td id='td'>{first}</td>
                 <td>{last}</td>
                 <td>{age}</td>
                 <td>{gender}</td>
             </tr>
+            <tr>
+              <td>{first}</td>
+              <td>{last}</td>
+              <td>{age}</td>
+              <td>{gender}</td>
+            </tr>
         </tbody>
     </table><br />
-     <input type="radio" name="gender" value="male"/> :Male &nbsp;&nbsp;
-     <input type="radio" name="gender" value="female"/> :Female
+     <input type="radio" name="gender" value="male" onClick={maleFilter}/> :Male &nbsp;&nbsp;
+     <input type="radio" name="gender" value="female" onClick={femaleFilter}/> :Female
      </center>
      </div>
     </div>
