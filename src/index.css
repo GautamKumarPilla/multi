@@ -53,15 +53,15 @@ table tbody tr td{
   border: 2px solid lightgrey;
   margin: 5px;
   border-radius: 5px;
-}
-.pagebutton{                        // Pagination 
+} */
+/* .pagebutton{                       // Pagination 
   display: inline-block;
   background-color: silver;
   padding:0px 5px 0px 5px;
   margin: 3px;
   border: 2px solid;
   border-radius: 5px;
-} */
+}  
 
 /* body{                       // Movies
   background-color: beige;
@@ -83,6 +83,13 @@ img{
 .btn:hover{
   background-color: royalblue;
 } */
+body{
+  display: flex;
+  justify-content: center;
+}
+.li{
+  align-items: middle;
+}
 input[type="text"] {
   padding:10px;
   margin:10px;

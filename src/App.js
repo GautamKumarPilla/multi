@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
-import Badge from './Shopping/Badge';
-import Card from './Shopping/Card';
+import Crypto from './Crypto/Crypto';
+//import Badge from './Shopping/Badge';
+//import Card from './Shopping/Card';
+//import Todo from './Todo';
 //import Movies from './Movies/Movies';
 //import Emoji from './Emoji/Emoji';
 //import Music from './MusicApp/Music';
@@ -15,8 +17,7 @@ import Card from './Shopping/Card';
 function App() {
   return (
     <div>
-      <Badge></Badge>
-      <Card></Card>
+    <Crypto></Crypto>
     </div>
   );
 }
