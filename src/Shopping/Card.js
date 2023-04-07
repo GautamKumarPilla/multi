@@ -41,5 +41,4 @@ const Card = ({products,AddProduct,RemoveProduct}) => {
 const mapStateToProps = (state) =>({
     products: state
 })
-
 export default connect(mapStateToProps,{AddProduct,RemoveProduct})(Card);
