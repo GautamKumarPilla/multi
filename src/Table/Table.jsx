@@ -12,10 +12,7 @@ const Table = () => {
         z.preventDefault();
    }
    const addDetails = () => {
-      first.map(firstname => <td>{firstname}</td> )
-      last.map(lastname => <td>{lastname}</td>)
-      age.map(age => <td>{age}</td>)
-      gender.map(gender =><td>{gender}</td>)
+      
    }
    const maleFilter = () =>{
         
@@ -60,10 +57,9 @@ const Table = () => {
                 <td>{gender}</td>
             </tr>
             <tr>
-              <td>{first}</td>
-              <td>{last}</td>
-              <td>{age}</td>
-              <td>{gender}</td>
+             {
+              first.map(f =>(<td>{f}</td>))
+             }
             </tr>
         </tbody>
     </table><br />
