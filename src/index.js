@@ -12,15 +12,15 @@ import Galleria from './Gallery/Galleria';
 
 const router = createBrowserRouter([
   {
-  path:'/gallery',
-  element:<Galleria></Galleria>
-  },
+  path:'/',
+  element:<App></App>,
    children:[
     {
       path:'/Emoji',
       element:<Emoji></Emoji>
     }
    ]
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById("root")).render(
