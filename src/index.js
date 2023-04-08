@@ -1,14 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import createRoot from 'react-dom';
-//import store from './Shopping/store';
-//import {Provider} from 'react-redux';
+import createRoot from 'react-dom/client';
+import store from './Shopping/store';
+import {Provider} from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { Router } from 'react-router';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Galleria from './Gallery/Galleria';
+import Food from './Food-Recipe/Food';
+import Emoji from './Emoji/Emoji';
+import Weather from './Weather/Weather';
 
 const router = createBrowserRouter([
   {
@@ -18,16 +20,34 @@ const router = createBrowserRouter([
     {
       path:'/Emoji',
       element:<Emoji></Emoji>
+    },
+    {
+      path:'/Gallery',
+      element:<Galleria></Galleria>
+    },
+    {
+      path:'/Food',
+      element:<Food></Food>
+    },
+    {
+      path:'/Weather',
+      element:<Weather></Weather>
     }
    ]
   }
 ])
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// ReactDOM.createRoot(document.getElementById("root")).render(
+//     <RouterProvider router={router} />
+// );
+
+ReactDOM.render(
   <React.StrictMode>
-     <App/>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

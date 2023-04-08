@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {connect} from 'react-redux';
 import {AddProduct} from './actions';
 import { RemoveProduct } from './actions';
+import './Shop.css';
 
 const Card = ({products,AddProduct,RemoveProduct}) => {
     const [item,setItem] = useState("");
@@ -19,7 +20,7 @@ const Card = ({products,AddProduct,RemoveProduct}) => {
             <div class="card" style={{"width": "18rem"}}>
                 <div class="card-body">
                     <form onSubmit={submitHandler}>
-                    <input type="text" placeholder="Add Products" value={item} onChange={e => setItem(e.target.value)}/> <br />
+                    <input type="text" placeholder="Add Products" value={item} onChange={e => setItem(e.target.value)}/> <br /><br />
                         <button type="submit" class="btn btn-success">
                         Add Product 
                         </button> 

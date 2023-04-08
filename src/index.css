@@ -14,18 +14,7 @@ code {
     monospace;
 } 
 
-/* input{
-  border-radius: 5px;
-  margin-top: 10px;
-  size: 30px;
-}
-h4{
-  margin:10px;
-}
 
-.card{
-  margin:10px
-} */
 /* body {                        //TIMER
   background-color:skyblue;
   font-family:"Courier New", Courier, monospace;
@@ -46,24 +35,9 @@ table tbody tr td{
   max-width: 90%;
   margin:20px;
 } */
-/* input{
-  border-radius: 5px;
-}
-.post{
-  border: 2px solid lightgrey;
-  margin: 5px;
-  border-radius: 5px;
-} */
-/* .pagebutton{                       // Pagination 
-  display: inline-block;
-  background-color: silver;
-  padding:0px 5px 0px 5px;
-  margin: 3px;
-  border: 2px solid;
-  border-radius: 5px;
-}  
 
-/* body{                       // Movies
+  
+/* body{                      
   background-color: beige;
 }
 input[type="text"] {
@@ -83,27 +57,3 @@ img{
 .btn:hover{
   background-color: royalblue;
 } */
-body{
-  display: flex;
-  justify-content: center;
-}
-.li{
-  align-items: middle;
-}
-input[type="text"] {
-  padding:10px;
-  margin:10px;
-  border-radius: 2px;
-}
-.item{
-  border:2px solid lightblue;
-  border-radius:3px;
-  margin: 10px;
-  padding:5px;
-}
-.card{
-  margin: 0px;
-}
-.badge{
-  cursor: pointer;
-}

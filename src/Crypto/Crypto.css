@@ -1,0 +1,26 @@
+input[type="text"] {          
+    padding:10px;
+    margin: 15px;
+    margin-left:700px;
+    border-radius: 100px;
+  }
+  input[type="submit"]{
+    margin: 10px;
+    margin-left: 760px;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(4,370px);
+    grid-auto-rows: 270px;
+    margin: 5px;
+    background-color: white;
+  }
+  .grid-container > div{
+    background-color: black;
+    margin: 10px;
+    padding-top: 10px;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+  }    

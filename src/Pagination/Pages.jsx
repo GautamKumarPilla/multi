@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
 import Pagination from './Pagination';
+import './pages.css';
 
 const Pages = () => {
     const [data, setData] = useState([]);
@@ -15,7 +16,7 @@ const Pages = () => {
     setPerpage(data.slice((pageNumber*10)-10,pageNumber*10))
   ]
   return (
-    <div className="App">
+    <div>
         <center className='display-6 text-success'>Search Results</center>
         {data.length >=1 ?
         <div>
