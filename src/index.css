@@ -13,9 +13,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } 
+  
 
-
-/* body {                        //TIMER
+/* body {                       
   background-color:skyblue;
   font-family:"Courier New", Courier, monospace;
 }
@@ -30,30 +30,4 @@ table tbody tr td{
   font-weight: bold;
   padding-top: 10px;
   margin-right: 100px;
-} */
- /* .card{                           // Emoji 
-  max-width: 90%;
-  margin:20px;
-} */
-
-  
-/* body{                      
-  background-color: beige;
-}
-input[type="text"] {
-  border-radius: 5px;
-  size: 30px;
-  padding: 5px;
-}
-input[type="submit"]{
-  border-radius: 40%;
-}
-.card {
-  margin:10px;
-}
-img{
-  max-height: 300px;
-}
-.btn:hover{
-  background-color: royalblue;
-} */
+}  */

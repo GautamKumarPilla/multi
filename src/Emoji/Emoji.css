@@ -1,0 +1,10 @@
+.card{
+    max-width: 90%;
+    margin: 20px;
+  }
+
+  input[type="text"]{
+    border-radius: 5px;
+    size: 30px;
+    padding: 5px;
+  }

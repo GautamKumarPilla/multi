@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
-import createRoot from 'react-dom/client';
-import store from './Shopping/store';
-import {Provider} from 'react-redux';
+//import createRoot from 'react-dom/client';
+//import store from './Shopping/store';
+//import {Provider} from 'react-redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
@@ -37,18 +37,18 @@ const router = createBrowserRouter([
   }
 ])
 
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//     <RouterProvider router={router} />
-// );
-
-ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <RouterProvider router={router} />
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
