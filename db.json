@@ -1,0 +1,53 @@
+{
+"Hostels":
+[
+   {
+      "Name":"Sree Harshita Hostel",
+      "NumberOfBeds": 200,
+      "Roomsharing":
+      {
+        
+      },
+      "Facilities":["Food","Water","Washing Machine","Wifi","Locker"],
+      "id":1
+    },
+    {
+      "Name":"Sri Nidhi Hostel",
+      "NumberOfBeds": 250,
+      "Roomsharing":
+      {
+        
+      },
+      "Facilities":["Food","Water","Washing Machine","Wifi","Locker","TV"],
+      "id":2 
+    },
+    { 
+      "Name":"Sai Madhava Hostel",
+      "NumberOfBeds": 300,
+      "Roomsharing":
+      {
+        
+      },
+      "Facilities":["Food","Water","Washing Machine","Wifi","Locker","TV","AC"],
+      "id":3
+    }
+],
+
+"Beds":
+[
+    {
+      "Roomid":"101",
+      "Status":"Not Available",
+      "Current Tenants":["Ram","Raju","Ravi"],
+      "Old Tenants":["Raghu","Ravinder","Rana"],
+      "Id":1
+    },
+    {
+      "Roomid":"102",
+      "Status":"Available",
+      "Current Tenants":[],
+      "Old Tenants":["Arun","Varun","Tarun"],
+      "Id":2
+    }
+]
+}
