@@ -20,12 +20,25 @@ const [newBed, setNewBed] = useState({
   }  
     
   return (
-    <div>
-        <div className='d-flex justify-content-center mt-3'>
-           <i className='display-6'>Add New Bed</i><br />
+    
+      <div className="mt-5">
+    <div className="w-25 mx-auto">
+            <div className='d-flex justify-content-center mt-3'>
+              
+            </div>
+            <h3 className=".text-warning-emphasis text-center"><i className='display-6'>Add New Bed</i></h3>
+            <label htmlFor="">RoomID</label>
+            <input type="text"  onChange={(z)=>{setNewBed(z.target.value)}} required placeholder="" className="form-control" />
+            <label htmlFor="">Status</label>
+            <input type="password" required placeholder="" className="form-control"/>
+            <div className="mt-2">
+            
+            </div>
+            <div className="d-flex justify-content-center">
+            <button onClick={NewBed} className="btn btn-outline-info mt-2">Add Bed</button>
+            </div>
         </div>
-        <input type="text" onChange={(z)=>{setNewBed(z.target.value)}} />
-        <button onClick={NewBed}>Add New Bed</button>
+        <input type="text" />
     </div>
   )
 }

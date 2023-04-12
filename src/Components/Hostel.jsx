@@ -37,7 +37,7 @@ const Hostel = () => {
     <div className='d-flex w-75 ms-auto'>
       <button className='btn btn-outline-success'>ADD ROOM</button>&nbsp;&nbsp;&nbsp;
       <button className='btn btn-outline-success' onClick={()=>{navigate('/AddBed')}}>ADD BED</button>&nbsp;&nbsp;&nbsp;
-      <button className='btn btn-outline-success'>ADD TENANT</button>
+      <button className='btn btn-outline-success' onClick={()=>{navigate('/AddTenant')}}>ADD TENANT</button>
     </div>
     </div>
   )

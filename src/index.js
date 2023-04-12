@@ -7,6 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Hostel from './Components/Hostel';
 import AddBed from './Components/AddBed';
+import AddTenant from './Components/AddTenant';
+import Login from './Components/Login';
+import AddRoom from './Components/AddRoom.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +18,7 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/login',
-        element:<></>
+        element:<Login></Login>
       },
       {
         path:'/dashboard',
@@ -24,6 +27,14 @@ const router = createBrowserRouter([
       {
         path:'/AddBed',
         element:<AddBed></AddBed>
+      },
+      {
+        path:'/AddTenant',
+        element:<AddTenant></AddTenant>
+      },
+      {
+        path:'/AddRoom',
+        element:<AddRoom></AddRoom>
       }
     ]
   }
