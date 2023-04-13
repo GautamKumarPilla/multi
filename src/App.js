@@ -13,7 +13,7 @@ function App() {
         <Link to="/dashboard" className='text-warning text-decoration-none'>Dash-Board </Link>
       </div>
     </div>
-    </div> 
+    </div>
     <div>
          <Outlet></Outlet>
       </div>

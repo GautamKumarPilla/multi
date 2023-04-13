@@ -2,7 +2,8 @@ import React from 'react'
 
 const AddRoom = () => {
   return (
-    <div>
+    <div className='d-flex justify-content-center'>
+        <h1>Add Room</h1>
         
     </div>
   )

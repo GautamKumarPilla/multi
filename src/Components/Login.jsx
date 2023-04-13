@@ -22,7 +22,7 @@ const Login =()=>{
         </form>
         <Link to="/signup" className="text-light">Don't have an account yet?(SignUp)</Link>
     </div>
-    </div> 
+    </div>
     )
 }; 
 
