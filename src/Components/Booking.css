@@ -1,0 +1,30 @@
+body, html {
+    height: 80%;
+  }
+* {
+    box-sizing: border-box;
+  }
+.box{
+    margin-bottom: 5px;
+    border: 2px solid burlywood;
+    background-color: white;
+    height: 300px;
+    width: 400px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+ 
+.bg-booking {
+    background-color: white; /* Fallback color */
+    background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+    color: black;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    border-radius: 10px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 99%;
+    padding: 10px;
+  }

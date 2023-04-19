@@ -10,6 +10,11 @@ import AddBed from './Components/AddBed';
 import AddTenant from './Components/AddTenant';
 import Login from './Components/Login';
 import AddRoom from './Components/AddRoom.jsx';
+import Helpline from './Components/Helpline.jsx';
+import Booking from './Components/Booking.jsx';
+import Signup from './Components/Signup.jsx';
+import Mail from './Components/Mail.jsx';
+import Verify from './Components/Verify.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +24,18 @@ const router = createBrowserRouter([
       {
         path:'/login',
         element:<Login></Login>
+      },
+      {
+        path:'/signup',
+        element:<Signup></Signup>
+      },
+      {
+        path:'/mail',
+        element:<Mail></Mail>
+      },
+      {
+        path:'/verify',
+        element:<Verify></Verify>
       },
       {
         path:'/dashboard',
@@ -35,6 +52,14 @@ const router = createBrowserRouter([
       {
         path:'/AddRoom',
         element:<AddRoom></AddRoom>
+      },
+      {
+        path:'/Helpline',
+        element:<Helpline></Helpline>
+      },
+      {
+        path:'/Booking',
+        element:<Booking></Booking>
       }
     ]
   }

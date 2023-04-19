@@ -2,8 +2,8 @@ import React from 'react'
 
 const AddRoom = () => {
   return (
-    <div className='d-flex justify-content-center'>
-        <h1>Add Room</h1>
+    <div className='d-flex justify-content-center mt-5'>
+      <h1><i className='display-6'>Add Room</i></h1>
         
     </div>
   )

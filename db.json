@@ -3,7 +3,14 @@
     {
       "Name": "Sree Harshita Hostel",
       "NumberOfBeds": 200,
-      "Roomsharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000 
+      },
       "Facilities": [
         "Food",
         "Water",
@@ -11,12 +18,15 @@
         "Wifi",
         "Locker"
       ],
+      "Contact" : "+91-6546616626",
+      "Area": "Kphb",
+      "Image": "https://media.cntraveler.com/photos/53e2f3f0dddaa35c30f6668f/16:9/w_2580,c_limit/home-lisbon-portugal.jpg",
       "id": 1
     },
     {
       "Name": "Sri Nidhi Hostel",
       "NumberOfBeds": 250,
-      "Roomsharing": {},
+      "Roosharing": {},
       "Facilities": [
         "Food",
         "Water",
@@ -25,12 +35,15 @@
         "Locker",
         "TV"
       ],
+      "Contact" : "+91-9546616626",
+      "Area":"Madhapur",
+      "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2016/05/Poets-Hostel-HD-16A.jpg",
       "id": 2
     },
     {
       "Name": "Sai Madhava Hostel",
       "NumberOfBeds": 300,
-      "Roomsharing": {},
+      "Roosharing": {},
       "Facilities": [
         "Food",
         "Water",
@@ -40,7 +53,44 @@
         "TV",
         "AC"
       ],
+      "Contact" : "+91-7546616626",
+      "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2018/06/Hostel-room-types-Hostel-Celica-1.jpg",
+      "Area": "Kphb",
       "id": 3
+    },
+    {
+      "Name": "Madhu P.G Men's Hostel",
+      "NumberOfBeds": 180,
+      "Roosharing": {},
+      "Facilities": [
+        "Food",
+        "Water",
+        "Washing Machine",
+        "Wifi",
+        "Locker",
+        "TV"
+      ],
+      "Contact" : "+91-8551554211",
+      "Image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hostel_Dormitory.jpg",
+      "Area": "Kondapur",
+      "id": 4
+    },
+    {
+      "Name": "Chandu P.G Men's Hostel",
+      "NumberOfBeds": 150,
+      "Roosharing": {},
+      "Facilities": [
+        "Food",
+        "Water",
+        "Washing Machine",
+        "Wifi",
+        "Locker",
+        "TV"
+      ],
+      "Contact" : "+91-8551554211",
+      "Image": "https://i.pinimg.com/originals/0e/88/eb/0e88eb38d065052ac8dce31529ee83b6.jpg",
+      "Area": "Lb nagar",
+      "id": 5
     }
   ],
   "Beds": [
@@ -71,11 +121,72 @@
       "id": 2
     },
     {
-      "Roomid": "",
-      "Status": "",
-      "Current Tenants": [],
-      "Old Tenants": [],
-      "Id": "",
+      "RoomId": "101",
+      "Status": "avail",
+      "CurrentTenants": "jagan,pk,cbn,kcr",
+      "id": 3
+    }
+  ],
+  "Tenants": [
+    {
+      "Name": "Sai Vikaas",
+      "ContactNumber": 8965445610,
+      "Address": [
+        "Shyam Colony,Hindupuran,Hampi"
+      ],
+      "id": 1
+    },
+    {
+      "Name": "Sree Aditya",
+      "ContactNumber": 8935848610,
+      "Address": [
+        "Samiksh Nagar,Hiranagar,Rajkot"
+      ],
+      "id": 2
+    },
+    {
+      "Name": "qwertyui",
+      "ContactNumber": "9807654321",
+      "Address": [
+        "argdwfdger,refabfdb,rbeabreb,beabareb"
+      ],
+      "id": 3
+    }
+  ],
+  "Signup": [
+    {
+      "Username": "",
+      "Fullname": "",
+      "Mobile": "",
+      "Email": "",
+      "Pincode": "",
+      "City": "",
+      "State": "",
+      "Password": "",
+      "id": 1
+    },
+    {
+      "Username": "shankarburner",
+      "Fullname": "Sai Shankar",
+      "Mobile": "9484842982",
+      "Email": "yhbadv@vbsh.com",
+      "Pincode": "576565",
+      "City": "vadsv",
+      "State": "bfgsbg",
+      "Password": "Vanjangi@01",
+      "RePassword": "Vanjangi@01",
+      "id": 2
+    },
+    {
+      "Username": "Whiteraven01",
+      "Fullname": "Sri Sai Kumar ",
+      "Mobile": "9484842923",
+      "Email": "ybhav@yahoo.com",
+      "Pincode": "574456",
+      "City": "vzg",
+      "State": "Ap",
+      "Password": "Kumar@01",
+      "RePassword": "Kumar@01",
       "id": 3
     }
   ]
