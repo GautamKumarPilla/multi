@@ -9,7 +9,7 @@
         "ThreeSharing": 7500,
         "FourSharing": 6500,
         "FiveSharing": 5500,
-        "SixSharing": 5000 
+        "SixSharing": 5000
       },
       "Facilities": [
         "Food",
@@ -18,7 +18,7 @@
         "Wifi",
         "Locker"
       ],
-      "Contact" : "+91-6546616626",
+      "Contact": "+91-6546616626",
       "Area": "Kphb",
       "Image": "https://media.cntraveler.com/photos/53e2f3f0dddaa35c30f6668f/16:9/w_2580,c_limit/home-lisbon-portugal.jpg",
       "id": 1
@@ -35,8 +35,8 @@
         "Locker",
         "TV"
       ],
-      "Contact" : "+91-9546616626",
-      "Area":"Madhapur",
+      "Contact": "+91-9546616626",
+      "Area": "Madhapur",
       "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2016/05/Poets-Hostel-HD-16A.jpg",
       "id": 2
     },
@@ -53,7 +53,7 @@
         "TV",
         "AC"
       ],
-      "Contact" : "+91-7546616626",
+      "Contact": "+91-7546616626",
       "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2018/06/Hostel-room-types-Hostel-Celica-1.jpg",
       "Area": "Kphb",
       "id": 3
@@ -70,7 +70,7 @@
         "Locker",
         "TV"
       ],
-      "Contact" : "+91-8551554211",
+      "Contact": "+91-8551554211",
       "Image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hostel_Dormitory.jpg",
       "Area": "Kondapur",
       "id": 4
@@ -87,10 +87,27 @@
         "Locker",
         "TV"
       ],
-      "Contact" : "+91-8551554211",
+      "Contact": "+91-8551554211",
       "Image": "https://i.pinimg.com/originals/0e/88/eb/0e88eb38d065052ac8dce31529ee83b6.jpg",
       "Area": "Lb nagar",
       "id": 5
+    },
+    {
+      "Name": "Sri Ram P.G Men's Hostel",
+      "NumberOfBeds": 190,
+      "Roosharing": {},
+      "Facilities": [
+        "Food",
+        "Water",
+        "Washing Machine",
+        "Wifi",
+        "Locker",
+        "TV"
+      ],
+      "Contact": "+91-7542198243",
+      "Image": "https://www.thebrokebackpacker.com/wp-content/uploads/2021/08/The-bunks.jpg",
+      "Area": "Miyapur",
+      "id": 6
     }
   ],
   "Beds": [
@@ -188,6 +205,12 @@
       "Password": "Kumar@01",
       "RePassword": "Kumar@01",
       "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
     }
   ]
 }

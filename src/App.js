@@ -50,5 +50,5 @@ function App() {
   </div>
   );
 }
-
+<div class="grid w-64 grid-cols-4 gap-2 mx-auto"><button type="button" class="jsx-7542a3d2121374b1 inline-flex items-center justify-center py-2  grayed transition duration-150 scale-100  ease-in-out "><img src="/twemoji/1f62d.svg" height="24" width="24" class="jsx-7542a3d2121374b1" /></button><button type="button" class="jsx-7542a3d2121374b1 inline-flex items-center justify-center py-2  grayed transition duration-150 scale-100  ease-in-out "><img src="/twemoji/1f615.svg" height="24" width="24" class="jsx-7542a3d2121374b1"/></button><button type="button" class="jsx-7542a3d2121374b1 inline-flex items-center justify-center py-2  grayed transition duration-150 scale-100  ease-in-out "><img src="/twemoji/1f600.svg" height="24" width="24" class="jsx-7542a3d2121374b1"/></button><button type="button" class="jsx-7542a3d2121374b1 inline-flex items-center justify-center py-2  grayed transition duration-150 scale-100  ease-in-out "><img src="/twemoji/1f929.svg" height="24" width="24" class="jsx-7542a3d2121374b1"/></button></div>
 export default App;

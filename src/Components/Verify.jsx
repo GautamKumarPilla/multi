@@ -7,7 +7,7 @@ function Verify() {
   <div className='text-center'>
     <i>
      {
-      `Verification link & Otp sent successfully, please check mail`
+      `Verification link & Otp sent successfully, please check your email`
      }
     </i><br />
     <b className='text-dark'>

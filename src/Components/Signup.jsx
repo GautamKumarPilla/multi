@@ -16,7 +16,7 @@ const Submit=()=>{
             alert("Signup Successful!")
         });
     }
-  
+
     return(
         <div className="bg-sign">
         <div className="w-50 mx-auto">
