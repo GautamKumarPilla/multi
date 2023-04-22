@@ -15,6 +15,7 @@ import Booking from './Components/Booking.jsx';
 import Signup from './Components/Signup.jsx';
 import Mail from './Components/Mail.jsx';
 import Verify from './Components/Verify.jsx';
+import Overview from './Components/Overview.jsx';
 
 const router = createBrowserRouter([
   {
@@ -56,13 +57,17 @@ const router = createBrowserRouter([
       {
         path:'/Helpline',
         element:<Helpline></Helpline>
+      }
+    ]
+  },
+      {
+        path:'/Overview',
+        element:<Overview></Overview>
       },
       {
         path:'/Booking',
         element:<Booking></Booking>
       }
-    ]
-  }
 ])
 ReactDOM.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />

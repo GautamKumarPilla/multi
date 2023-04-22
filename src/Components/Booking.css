@@ -4,13 +4,19 @@ body, html {
 * {
     box-sizing: border-box;
   }
+ #button:hover{
+    box-shadow: 5px 5px 2px teal;
+  }
+.btn:hover[id="gojo"]{
+  box-shadow: 5px 5px 10px seagreen;
+}
 .box{
     margin-bottom: 5px;
     border: 2px solid burlywood;
     background-color: white;
     height: 300px;
     width: 400px;
-    box-shadow: 10px 10px 40px lightblue;
+    box-shadow: 10px 10px 10px lightblue;
 }
 .box:hover{
   animation-duration: 2s;
@@ -18,17 +24,19 @@ body, html {
 }
  
 .bg-booking {
-    background-color: white; /* Fallback color */
-    background-color: rgba(0,0,0); /* Black w/opacity/see-through */
+    background-color: rgba(0,0,0,0.9); /* Black w/opacity/see-through */
     color: black;
     font-weight: bold;
     border: 3px solid #f1f1f1;
     border-radius: 10px;
     position: absolute;
-    top: 65%;
+    top: 800px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-30%);
     z-index: 2;
     width: 99%;
     padding: 10px;
   }
+.bg-booking:hover{
+  box-shadow: 10px 10px 40px thistle;
+}  

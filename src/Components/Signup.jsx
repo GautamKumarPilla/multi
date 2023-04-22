@@ -92,7 +92,7 @@ const Submit=()=>{
                                     <Field className="form-control" name='RePassword' placeholder="Re-enter password"></Field>
                                     <div className="text-danger"><small>{formik.touched.RePassword && formik.errors.RePassword}</small></div>
                                     <div style={{textAlign:'center'}}>
-                                        <button type="submit" onClick={Submit} className="btn btn-outline-success border border-3 border-danger w-25 mx-1 mt-3">Submit</button>
+                                        <button type="submit" onClick={Submit} style={{boxShadow:"5px 5px 2px black"}} className="btn btn-outline-success w-25 mx-1 mt-3">Submit</button>
                                     </div>
                                 </Form>
                             )

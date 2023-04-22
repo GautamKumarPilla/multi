@@ -44,7 +44,7 @@ const [current,setCurrent]= useState('');
             <button onClick={NewBed} className="btn btn-outline-info mt-2">Add Bed</button>
             </div>
         </div>
-        <button className='btn btn-dark mt-2 mx-3' onClick={()=>{teleport('/dashboard')}}>Back</button>
+        <button className='btn btn-dark mt-2 mx-3' onClick={()=>{teleport('/dashboard')}}>&#9666;Back</button>
     </div>
     </div>
     </div>

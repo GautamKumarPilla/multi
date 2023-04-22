@@ -38,8 +38,8 @@ const AddTenant = () => {
             <button className="btn btn-outline-info mt-2" onClick={NewTenant}>Submit</button>
         </div>
         </div>
-          <button className='btn btn-dark mt-2 mx-3 skip-backward-btn' onClick={()=>{teleport('/dashboard')}}>Back</button>
-          </div>
+          <button className='btn btn-dark mt-2 mx-3 skip-backward-btn' onClick={()=>{teleport('/dashboard')}}>&#9666;Back</button>
+        </div>
     </div>
     </div>
   )

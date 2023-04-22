@@ -60,7 +60,7 @@ const inputHandler=(z)=>{
             <Link to="/mail" className="text-warning text-decoration-none"><p>Forgot Password?</p></Link>
             </div>
             <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-info mt-2" onClick={inputHandler} onSubmit={user} >Login</button>
+            <button className="btn btn-outline-info mt-2" style={{boxShadow:"5px 5px 2px"}} onClick={inputHandler} onSubmit={user} >Login</button>
             </div>
         </form>
         <Link to="/signup" className="text-light">Don't have an account yet?(SignUp)</Link>
