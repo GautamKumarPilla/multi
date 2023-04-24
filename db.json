@@ -87,9 +87,9 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-8551554211",
+      "Contact": "+91-8262945278",
       "Image": "https://i.pinimg.com/originals/0e/88/eb/0e88eb38d065052ac8dce31529ee83b6.jpg",
-      "Area": "Lb nagar",
+      "Area": "LB nagar",
       "id": 5
     },
     {
@@ -104,7 +104,7 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9542964215",
       "Image": "https://www.thebrokebackpacker.com/wp-content/uploads/2021/08/The-bunks.jpg",
       "Area": "Miyapur",
       "id": 6
@@ -123,9 +123,9 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-7479532927",
       "Image": "https://assets-news.housing.com/news/wp-content/uploads/2022/03/30092033/featured-compressed-41.jpg",
-      "Area": "Miyapur",
+      "Area": "Kondapur",
       "id": 7
     },
     {
@@ -142,14 +142,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9842576135",
       "Image": "https://thumbs.dreamstime.com/b/hostel-dormitory-beds-arranged-room-198687960.jpg",
-      "Area": "Miyapur",
+      "Area": "Madhapur",
       "id": 8
     },
     {
       "Name": "Sri Sai Krishna Deluxe Boys Hostels",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 215,
       "Roosharing": {},
       "Rating": 3.7,
       "Votes": 452,
@@ -161,14 +161,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-8641597382",
       "Image": "https://youthincmag.com/wp-content/uploads/2018/10/hostel-1.jpg",
-      "Area": "Miyapur",
+      "Area": "Raidurg",
       "id": 9
     },
     {
       "Name": "Manjeera Boys Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 206,
       "Roosharing": {},
       "Rating": 3.7,
       "Votes": 425,
@@ -180,14 +180,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-7122658947",
       "Image": "https://kiit.ac.in/wp-content/uploads/2022/03/KIIT-hostel-2-sharing.jpg",
-      "Area": "Miyapur",
+      "Area": "Bala Nagar",
       "id": 10
     },
     {
       "Name": "Sujith Luxury Accommodation",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 200,
       "Roosharing": {},
       "Rating": 4.1,
       "Votes": 404,
@@ -199,14 +199,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9632794115",
       "Image": "https://www.japan-guide.com/g21/2030_01.jpg",
-      "Area": "Miyapur",
+      "Area": "Paradise Circle",
       "id": 11
     },
     {
       "Name": "Star Deluxe Mens Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 250,
       "Roosharing": {},
       "Rating": 4.1,
       "Votes": 112,
@@ -218,14 +218,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-6945871269",
       "Image": "https://uploads-ssl.webflow.com/5d51bb7d8483edf0d0390257/5e90283ebc1f1264ea7dbf42_festival_resized.jpg",
-      "Area": "Miyapur",
+      "Area": "Kondapur",
       "id": 12
     },
     {
       "Name": "Sri Sai Executive Boys Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 240,
       "Roosharing": {},
       "Rating": 3.7,
       "Votes": 46,
@@ -237,14 +237,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9354867821",
       "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2018/06/Hostel-room-types-Homestay-Cave-Hostel.jpg",
       "Area": "Bala Nagar",
       "id": 13
     },
     {
       "Name": "Vasu Deva PG Mens & Womens Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 220,
       "Roosharing": {},
       "Rating": 3.3,
       "Votes": 12,
@@ -256,14 +256,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-7835216490",
       "Image": "https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/Moustache-Hostel.jpg",
-      "Area": "Kondapur",
+      "Area": "Kphb",
       "id": 14
     },
     {
       "Name": "PIONEERS BOY'S AND MEN'S HOSTEL",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 230,
       "Roosharing": {},
       "Rating": 3.9,
       "Votes": 34,
@@ -275,14 +275,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-8206051435",
       "Image": "https://content.jdmagicbox.com/comp/rajahmundry/b3/9999px883.x883.171109090504.j2b3/catalogue/satya-sai-ladies-hostel-rajahmundry-0qn5p7kd5y.jpg",
       "Area": "Paradise Circle",
       "id": 15
     },
     {
       "Name": "GVK Pg Hostels",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 196,
       "Roosharing": {},
       "Rating": 4.3,
       "Votes": 592,
@@ -294,14 +294,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-8054026501",
       "Image": "https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Apr/11/Photo_h400_w540/GR2-363359-1717335_400_540.jpg",
       "Area": "Miyapur",
       "id": 16
     },
     {
       "Name": "Shiva Sai Executive Men's Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 205,
       "Roosharing": {},
       "Rating": 3.5,
       "Votes": 100,
@@ -313,14 +313,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-8457023458",
       "Image": "https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2017/04/16/Pictures/olympus-digital-camera_9db84436-2260-11e7-a5a9-704c25d3160d.jpg",
       "Area": "Manikonda",
       "id": 17
     },
     {
       "Name": "Rohith Men's Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 244,
       "Roosharing": {},
       "Rating": 3.9,
       "Votes": 108,
@@ -332,14 +332,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9854763210",
       "Image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1594884135/Website/CMS-Uploads/hw7k0wl307qrp7ywuvsj.jpg",
-      "Area": "Miyapur",
+      "Area": "LB nagar",
       "id": 18
     },
     {
       "Name": "Rukmini Women's Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 280,
       "Roosharing": {},
       "Rating": 4.4,
       "Votes": 108,
@@ -351,14 +351,14 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-7542092699",
       "Image": "https://q-xx.bstatic.com/xdata/images/hotel/max1200/235554140.jpg?k=52c56681367174540e20cae1f058c078187f0ae85f3c84b67c6d587517ba8b11&o=",
-      "Area": "Miyapur",
+      "Area": "Raidurg",
       "id": 19
     },
     {
       "Name": "Rahul Men's Hostel",
-      "NumberOfBeds": 210,
+      "NumberOfBeds": 270,
       "Roosharing": {},
       "Rating": 3.95,
       "Votes": 222,
@@ -370,9 +370,9 @@
         "Locker",
         "TV"
       ],
-      "Contact": "+91-7542198243",
+      "Contact": "+91-9927546891",
       "Image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1580397985/Website/CMS-Uploads/simnexk7sh8wljr9oriy.jpg",
-      "Area": "Miyapur",
+      "Area": "Manikonda",
       "id": 20
     }
   ],

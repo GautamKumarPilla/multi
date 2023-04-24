@@ -26,7 +26,7 @@ const filteredSearch = hostel.filter((item) =>
   || item.Name.toLowerCase().includes(search.toLowerCase())
 );
 const filteredSelect = hostel.filter((item)=>
-   item.Area.includes(search)
+  item.Area.toLowerCase().includes(select)
 );
 
   return (
@@ -34,17 +34,17 @@ const filteredSelect = hostel.filter((item)=>
     <div className=''>
       <div className='d-flex flex-wrap'>
     <button onClick={()=>{teleport('/')}} className='btn btn-dark mx-2 mt-1'>&#9666;Back</button>
-    <select onChange={selectFilter} value={select} name="search" for="search" id="" className='d-flex mx-auto w-25 form-select mt-1'>
-      <option selected >Select Area/Locality</option>
-      <option value="kphb">Kphb</option>
-      <option value="kondapur">Kondapur</option>
-      <option value="lbnagar">LB Nagar</option>
-      <option value="madhapur">Madhapur</option>
-      <option value="raidurg">Raidurg</option>
-      <option value="miyapur">Miyapur</option>
-      <option value="manikonda">Manikonda</option>
-      <option value="balanagar">Bala Nagar</option>
-      <option value="paradise">Paradise Circle</option>
+    <select onChange={selectFilter} value={select} name="" htmlFor="search" id="" className='d-flex mx-auto w-25 form-select mt-1'>
+      <option defaultChecked hidden defaultValue={select}>Select Area/Locality</option>
+      <option id="search" value="kphb">Kphb</option>
+      <option id="search" value="kondapur">Kondapur</option>
+      <option id="search" value="lb nagar">LB Nagar</option>
+      <option id="search" value="madhapur">Madhapur</option>
+      <option id="search" value="raidurg">Raidurg</option>
+      <option id="search" value="miyapur">Miyapur</option>
+      <option id="search" value="manikonda">Manikonda</option>
+      <option id="search" value="bala nagar">Bala Nagar</option>
+      <option id="search" value="paradise">Paradise Circle</option>
     </select>
     {/* <input type="search" name="" id="" defaultValue='&#128269;Search here' className='d-flex form-control-sm' /> */}
 <form className="mt-1" action="">
@@ -56,9 +56,9 @@ const filteredSelect = hostel.filter((item)=>
     <h4 className='text-warning'>State: Telangana</h4>&nbsp;&nbsp;&nbsp;
     <h4 className='text-warning'>City: Hyderabad</h4>
     </div>
-    <div className='d-flex flex-wrap justify-content-evenly mx-3 my-3' style={{'row-gap':'30px'}} >
+    <div className='d-flex flex-wrap justify-content-evenly mx-3 my-3' style={{'rowGap':'30px'}} >
       {
-        (filteredSearch || filteredSelect).map((ht)=>{
+        (filteredSelect || filteredSearch).map((ht)=>{
             return(
             <div className='box mx-3 p-1'>
             <img src={ht.Image} className="d-flex mx-auto" style={{'width':'280px','height':'150px'}} alt={ht.Name} />
@@ -68,9 +68,8 @@ const filteredSelect = hostel.filter((item)=>
             <label>Room-share: </label><span><b style={{fontFamily:'serif'}}>{ht.OneSharing} (1-6) Persons</b></span><br />
             <div className='d-flex justify-content-between mb-2'>
             <label>Available Beds: <b style={{fontFamily:'serif'}}>{ht.NumberOfBeds-145}</b></label>
-            <i><button onClick={()=>{teleport('/Overview')}} id='button' className='ms-auto me-3 btn btn-outline-danger p-1'>Book&#x25B8;</button></i>
+            <i><button onClick={()=>{teleport(`/Overview/${ht.id}`)}} value={ht.id} id='button' className='ms-auto me-3 btn btn-outline-danger p-1'>Book&#x25B8;</button></i>
             </div>
-             {/* {(bk.Roomsharing)} */}
             </div>
             )
           })

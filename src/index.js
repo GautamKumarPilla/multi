@@ -61,7 +61,7 @@ const router = createBrowserRouter([
     ]
   },
       {
-        path:'/Overview',
+        path:'/Overview/:id',
         element:<Overview></Overview>
       },
       {
