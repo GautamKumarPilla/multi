@@ -11,12 +11,19 @@
         "FiveSharing": 5500,
         "SixSharing": 5000
       },
+      "Rating": 4.0,
+      "Votes": 225,
       "Facilities": [
         "Food",
         "Water",
         "Washing Machine",
         "Wifi",
-        "Locker"
+        "TV",
+        "Locker",
+        "Power Backup",
+        "CCTV",
+        "Geyser(24*7)",
+        "Refrigerator"
       ],
       "Contact": "+91-6546616626",
       "Area": "Kphb",
@@ -26,14 +33,26 @@
     {
       "Name": "Sri Nidhi Hostel",
       "NumberOfBeds": 250,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
+      "Rating": 3.9,
+      "Votes": 305,
       "Facilities": [
         "Food",
         "Water",
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "CCTV",
+        "Geyser(24*7)"
       ],
       "Contact": "+91-9546616626",
       "Area": "Madhapur",
@@ -43,7 +62,16 @@
     {
       "Name": "Sai Madhava Hostel",
       "NumberOfBeds": 300,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
+      "Rating": 4.3,
+      "Votes": 395,
       "Facilities": [
         "Food",
         "Water",
@@ -51,7 +79,11 @@
         "Wifi",
         "Locker",
         "TV",
-        "AC"
+        "AC",
+        "CCTV",
+        "Power Backup",
+        "Geyser(24*7)",
+        "Refrigerator"
       ],
       "Contact": "+91-7546616626",
       "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2018/06/Hostel-room-types-Hostel-Celica-1.jpg",
@@ -61,14 +93,26 @@
     {
       "Name": "Madhu P.G Men's Hostel",
       "NumberOfBeds": 180,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
+      "Rating": 4,
+      "Votes": 365,
       "Facilities": [
         "Food",
         "Water",
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Curtains",
+        "CCTV",
+        "Geyser(24*7)"
       ],
       "Contact": "+91-8551554211",
       "Image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Hostel_Dormitory.jpg",
@@ -78,14 +122,26 @@
     {
       "Name": "Chandu P.G Men's Hostel",
       "NumberOfBeds": 150,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
+      "Rating": 3.8,
+      "Votes": 532,
       "Facilities": [
         "Food",
         "Water",
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "Curtains",
+        "CCTV"
       ],
       "Contact": "+91-8262945278",
       "Image": "https://i.pinimg.com/originals/0e/88/eb/0e88eb38d065052ac8dce31529ee83b6.jpg",
@@ -95,14 +151,25 @@
     {
       "Name": "Sri Ram P.G Men's Hostel",
       "NumberOfBeds": 190,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
+      "Rating": 3.9,
+      "Votes": 357,
       "Facilities": [
         "Food",
         "Water",
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Power Backup",
+        "CCTV"
       ],
       "Contact": "+91-9542964215",
       "Image": "https://www.thebrokebackpacker.com/wp-content/uploads/2021/08/The-bunks.jpg",
@@ -112,7 +179,14 @@
     {
       "Name": "My Home Sri Nidhi Luxury Pg Mens",
       "NumberOfBeds": 200,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.7,
       "Votes": 142,
       "Facilities": [
@@ -121,7 +195,9 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "CCTV"
       ],
       "Contact": "+91-7479532927",
       "Image": "https://assets-news.housing.com/news/wp-content/uploads/2022/03/30092033/featured-compressed-41.jpg",
@@ -131,7 +207,14 @@
     {
       "Name": "Suijth Accommodation For Men",
       "NumberOfBeds": 185,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.7,
       "Votes": 513,
       "Facilities": [
@@ -140,7 +223,9 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Curtains",
+        "CCTV"
       ],
       "Contact": "+91-9842576135",
       "Image": "https://thumbs.dreamstime.com/b/hostel-dormitory-beds-arranged-room-198687960.jpg",
@@ -150,7 +235,14 @@
     {
       "Name": "Sri Sai Krishna Deluxe Boys Hostels",
       "NumberOfBeds": 215,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.7,
       "Votes": 452,
       "Facilities": [
@@ -159,7 +251,9 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Power Backup",
+        "CCTV"
       ],
       "Contact": "+91-8641597382",
       "Image": "https://youthincmag.com/wp-content/uploads/2018/10/hostel-1.jpg",
@@ -169,7 +263,14 @@
     {
       "Name": "Manjeera Boys Hostel",
       "NumberOfBeds": 206,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.7,
       "Votes": 425,
       "Facilities": [
@@ -177,8 +278,11 @@
         "Water",
         "Washing Machine",
         "Wifi",
+        "Power Backup",
         "Locker",
-        "TV"
+        "TV",
+        "CCTV",
+        "Curtains"
       ],
       "Contact": "+91-7122658947",
       "Image": "https://kiit.ac.in/wp-content/uploads/2022/03/KIIT-hostel-2-sharing.jpg",
@@ -188,7 +292,14 @@
     {
       "Name": "Sujith Luxury Accommodation",
       "NumberOfBeds": 200,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 4.1,
       "Votes": 404,
       "Facilities": [
@@ -197,7 +308,12 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "Power Backup",
+        "TV",
+        "AC",
+        "Geyser(24*7)",
+        "Curtains",
+        "CCTV"
       ],
       "Contact": "+91-9632794115",
       "Image": "https://www.japan-guide.com/g21/2030_01.jpg",
@@ -207,7 +323,14 @@
     {
       "Name": "Star Deluxe Mens Hostel",
       "NumberOfBeds": 250,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 4.1,
       "Votes": 112,
       "Facilities": [
@@ -216,7 +339,10 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Power Backup",
+        "CCTV",
+        "Geyser(24*7)"
       ],
       "Contact": "+91-6945871269",
       "Image": "https://uploads-ssl.webflow.com/5d51bb7d8483edf0d0390257/5e90283ebc1f1264ea7dbf42_festival_resized.jpg",
@@ -226,7 +352,14 @@
     {
       "Name": "Sri Sai Executive Boys Hostel",
       "NumberOfBeds": 240,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.7,
       "Votes": 46,
       "Facilities": [
@@ -235,7 +368,9 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "CCTV"
       ],
       "Contact": "+91-9354867821",
       "Image": "https://www.hostelworld.com/blog/wp-content/uploads/2018/06/Hostel-room-types-Homestay-Cave-Hostel.jpg",
@@ -245,7 +380,14 @@
     {
       "Name": "Vasu Deva PG Mens & Womens Hostel",
       "NumberOfBeds": 220,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.3,
       "Votes": 12,
       "Facilities": [
@@ -254,7 +396,10 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "CCTV",
+        "Power Backup"
       ],
       "Contact": "+91-7835216490",
       "Image": "https://www.outlookindia.com/outlooktraveller/public/uploads/filemanager/images/Moustache-Hostel.jpg",
@@ -264,7 +409,14 @@
     {
       "Name": "PIONEERS BOY'S AND MEN'S HOSTEL",
       "NumberOfBeds": 230,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.9,
       "Votes": 34,
       "Facilities": [
@@ -273,7 +425,10 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "Power Backup",
+        "CCTV"
       ],
       "Contact": "+91-8206051435",
       "Image": "https://content.jdmagicbox.com/comp/rajahmundry/b3/9999px883.x883.171109090504.j2b3/catalogue/satya-sai-ladies-hostel-rajahmundry-0qn5p7kd5y.jpg",
@@ -283,7 +438,14 @@
     {
       "Name": "GVK Pg Hostels",
       "NumberOfBeds": 196,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 4.3,
       "Votes": 592,
       "Facilities": [
@@ -292,7 +454,13 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Curtains",
+        "Refrigerator",
+        "CCTV",
+        "AC",
+        "Power Backup",
+        "Geyser(24*7)"
       ],
       "Contact": "+91-8054026501",
       "Image": "https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Apr/11/Photo_h400_w540/GR2-363359-1717335_400_540.jpg",
@@ -302,7 +470,14 @@
     {
       "Name": "Shiva Sai Executive Men's Hostel",
       "NumberOfBeds": 205,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.5,
       "Votes": 100,
       "Facilities": [
@@ -311,7 +486,10 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Power Backup",
+        "Refrigerator",
+        "CCTV"
       ],
       "Contact": "+91-8457023458",
       "Image": "https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2017/04/16/Pictures/olympus-digital-camera_9db84436-2260-11e7-a5a9-704c25d3160d.jpg",
@@ -321,7 +499,14 @@
     {
       "Name": "Rohith Men's Hostel",
       "NumberOfBeds": 244,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.9,
       "Votes": 108,
       "Facilities": [
@@ -330,7 +515,9 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Power Backup",
+        "CCTV"
       ],
       "Contact": "+91-9854763210",
       "Image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1594884135/Website/CMS-Uploads/hw7k0wl307qrp7ywuvsj.jpg",
@@ -340,7 +527,14 @@
     {
       "Name": "Rukmini Women's Hostel",
       "NumberOfBeds": 280,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 4.4,
       "Votes": 108,
       "Facilities": [
@@ -349,7 +543,12 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "Refrigerator",
+        "CCTV",
+        "Power Backup",
+        "AC",
+        "Geyser(24*7)"
       ],
       "Contact": "+91-7542092699",
       "Image": "https://q-xx.bstatic.com/xdata/images/hotel/max1200/235554140.jpg?k=52c56681367174540e20cae1f058c078187f0ae85f3c84b67c6d587517ba8b11&o=",
@@ -359,7 +558,14 @@
     {
       "Name": "Rahul Men's Hostel",
       "NumberOfBeds": 270,
-      "Roosharing": {},
+      "Roomsharing": {
+        "OneSharing": 15000,
+        "TwoSharing": 9000,
+        "ThreeSharing": 7500,
+        "FourSharing": 6500,
+        "FiveSharing": 5500,
+        "SixSharing": 5000
+      },
       "Rating": 3.95,
       "Votes": 222,
       "Facilities": [
@@ -368,7 +574,11 @@
         "Washing Machine",
         "Wifi",
         "Locker",
-        "TV"
+        "TV",
+        "AC","Curtains",
+        "Geyser(24*7)",
+        "Power Backup",
+        "CCTV"
       ],
       "Contact": "+91-9927546891",
       "Image": "https://res.cloudinary.com/stanza-living/image/upload/f_auto,q_auto,w_600/e_improve/e_sharpen:10/e_saturation:10/v1580397985/Website/CMS-Uploads/simnexk7sh8wljr9oriy.jpg",

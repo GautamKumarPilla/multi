@@ -2,9 +2,9 @@ body, html {
   height: 80%;
 }
 
-p:hover{
+/* p:hover{
 color: palevioletred;
-}
+} */
 
 * {
   box-sizing: border-box;

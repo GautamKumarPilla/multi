@@ -8,15 +8,16 @@ const Booking = () => {
   const [booking, setBooking] = useState([]);
   const [search, setSearch] = useState('');
   const [select, setSelect] = useState('');
+  const [id, setId] = useState('');
   var teleport = useNavigate();
-
+  
 const searchFilter=(zeta)=>{
     setSearch(zeta.target.value);
 }
 const selectFilter=(peta)=>{
    setSelect(peta.target.value);
 }
- 
+
 axios.get("http://localhost:4000/Hostels").then((res)=>{
     setBooking([...res.data]);
     })
@@ -29,10 +30,32 @@ const filteredSelect = hostel.filter((item)=>
   item.Area.toLowerCase().includes(select)
 );
 
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-danger alert-dismissible" role="alert">`,
+    `   <div>${'You have logged-in successfully!'}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('You have logged-in successfully!', 'danger')
+  })
+}
+
   return (
+    
    Login && <div className='d-flex flex-wrap justify-content-center'>
     <div className=''>
-      <div className='d-flex flex-wrap'>
+    <div id="liveAlertPlaceholder"></div>
+    <div className='d-flex flex-wrap'>
     <button onClick={()=>{teleport('/')}} className='btn btn-dark mx-2 mt-1'>&#9666;Back</button>
     <select onChange={selectFilter} value={select} name="" htmlFor="search" id="" className='d-flex mx-auto w-25 form-select mt-1'>
       <option defaultChecked hidden defaultValue={select}>Select Area/Locality</option>
@@ -67,7 +90,7 @@ const filteredSelect = hostel.filter((item)=>
             <label>Contact: </label> <b style={{fontFamily:'serif'}}>{ht.Contact}</b><br />
             <label>Room-share: </label><span><b style={{fontFamily:'serif'}}>{ht.OneSharing} (1-6) Persons</b></span><br />
             <div className='d-flex justify-content-between mb-2'>
-            <label>Available Beds: <b style={{fontFamily:'serif'}}>{ht.NumberOfBeds-145}</b></label>
+            <label>Total Beds: <b style={{fontFamily:'serif'}}>{ht.NumberOfBeds}</b></label>
             <i><button onClick={()=>{teleport(`/Overview/${ht.id}`)}} value={ht.id} id='button' className='ms-auto me-3 btn btn-outline-danger p-1'>Book&#x25B8;</button></i>
             </div>
             </div>

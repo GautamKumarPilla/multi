@@ -16,6 +16,8 @@ import Signup from './Components/Signup.jsx';
 import Mail from './Components/Mail.jsx';
 import Verify from './Components/Verify.jsx';
 import Overview from './Components/Overview.jsx';
+import Payment from './Components/Payment.jsx';
+import Endpage from './Components/Endpage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -61,12 +63,20 @@ const router = createBrowserRouter([
     ]
   },
       {
+        path:'/Booking',
+        element:<Booking></Booking>
+      },
+      {
         path:'/Overview/:id',
         element:<Overview></Overview>
       },
       {
-        path:'/Booking',
-        element:<Booking></Booking>
+        path:'/Payment/:radio',
+        element:<Payment></Payment>
+      },
+      {
+        path:'/Endpage',
+        element:<Endpage></Endpage>
       }
 ])
 ReactDOM.createRoot(document.getElementById("root")).render(

@@ -1,39 +1,96 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import './Booking.css';
 
 const Overview = () => {
   const [booking, setBooking] = useState([]);
-  const {index} = useParams();
-
-  //console.log(index);
+  const [radio, setRadio] = useState();
   var teleport = useNavigate();
+  const {id} = useParams();
+  // console.log("x",x)
+  // console.log(id);  
+  const inputHandler=(zeta)=>{
+   setRadio(zeta.target.value)
+  }
   
-  axios.get(`http://localhost:4000/Hostels?id=${index}`).then((res)=>{
+  useEffect(()=>{
+    axios.get(`http://localhost:4000/Hostels?id=${id}`).then((res)=>{
+     // console.log(res.data);
+     // console.log([...res.data])
     setBooking([...res.data]);
     })
-    
+  })
+   // console.log(booking)
   return (
     <div>
-    <div>
-      <button onClick={()=>{teleport('/booking')}} className='btn btn-dark mx-3 mt-2'>&#9666;View other options</button>
-      <p className='display-4 text-center text-success ms-5'>Booking Process</p><br />
-    </div>
-      <div className=''>
-      <p>Whatsapp map contact rating votes photos room-share details facilities about(hostel info) </p>
+    <div className='d-flex align-items-center' style={{columnGap:"25%"}}>
+    <button onClick={()=>{teleport('/booking')}} className='btn btn-dark mx-3 mt-2'>&#9666;View other options</button>
+    <p className='display-5 text-center text-success'>Booking Process</p>
+    </div><br />
+      <div style={{height:"160vh"}}>
+    {/* <p> Map rating votes photos details about(hostel info) </p> */}
       {
-        booking.map((ov,id)=>{
-          <div className='card mx-3 p-1'>
-            <img src={ov[id].Image} className="d-flex mx-auto" style={{'width':'280px','height':'150px'}} alt={ov[id].Name} />
-            <h5 className="d-flex justify-content-center">{ov[id].Name}</h5>  
-            <label>Area/Locality: </label> &nbsp;<b style={{fontFamily:'serif'}}>{ov[id].Area}</b><br/>
-            <label>Contact: </label> <b style={{fontFamily:'serif'}}>{ov[id].Contact}</b><br />
-            <label>Room-share: </label><span><b style={{fontFamily:'serif'}}>{ov[id].OneSharing} (1-6) Persons</b></span><br />
-            <div className='d-flex justify-content-between mb-2'>
-            <label>Available Beds: <b style={{fontFamily:'serif'}}>{ov[id].NumberOfBeds-145}</b></label>
-            <i></i>
+        booking.map((ov,i)=>{
+            return(
+             <div>
+              <div className='card mx-3 p-3'>
+              <img src={ov.Image} style={{'width':'500px','height':'350px'}} alt={ov.Name} />
+              <h5 className="">{ov.Name}</h5>  
+              <label>Area/Locality:  &nbsp;<b style={{fontFamily:'serif'}}>{ov.Area}</b></label>
+              <label>Contact:  <b style={{fontFamily:'serif'}}>{ov.Contact}</b></label>
+              <label>Room-share: <span><b style={{fontFamily:'serif'}}> (1-6) Persons</b></span><br />
+               <div className='mt-2 mb-2'>
+                <h6 className='text-center'>Single Sharing: {ov.Roomsharing.OneSharing}&nbsp;&nbsp;&nbsp;
+                    Double Sharing: {ov.Roomsharing.TwoSharing}&nbsp;&nbsp;&nbsp;      
+                    Three Sharing: {ov.Roomsharing.ThreeSharing}&nbsp;&nbsp;&nbsp;      
+                    Four Sharing: {ov.Roomsharing.FourSharing}&nbsp;&nbsp;&nbsp;      
+                    Five Sharing: {ov.Roomsharing.FiveSharing}&nbsp;&nbsp;&nbsp;      
+                    Six Sharing: {ov.Roomsharing.SixSharing}</h6>
+               </div> </label>
+
+              <label>Facilities: &nbsp;&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"indigo"}}> {ov.Facilities[0]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"chocolate"}}> {ov.Facilities[1]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"cadetblue"}}> {ov.Facilities[2]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"yellow"}}> {ov.Facilities[3]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2 text-bg-danger"> {ov.Facilities[4]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"aqua"}}> {ov.Facilities[5]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"blueviolet"}}> {ov.Facilities[6]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"crimson"}}> {ov.Facilities[7]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"darkolivegreen"}}> {ov.Facilities[8]}</h6>&nbsp;
+                <h6 class="badge rounded-pill p-2" style={{backgroundColor:"lightgreen"}}>+2</h6>
+              </label>
+          
+              <label>Available Beds: <b style={{fontFamily:'serif'}}>{ov.NumberOfBeds-125}</b></label>
+              <label className='fa fa-whatsapp' style={{fontSize:"18px",color:"green"}}>Whatsapp No: <b style={{fontFamily:'arial'}}><span className="badge bg-success">{ov.Contact}</span></b></label>
+              <label>Rating: <b style={{fontFamily:'serif'}}>{ov.Rating}/5</b></label>
+              <label>Votes: <b style={{fontFamily:'serif'}}>{ov.Votes}</b></label>
+              <p></p>
+              <div className='d-flex justify-content-between mb-2'>
+              <i></i>
+              
+              <div className='card mt-5 p-2'>
+              <h6 className='display-6 text-primary'>Please Select your room-share type</h6><br />
+              Single Sharing:<input type="radio" name="amount" value={ov.Roomsharing.OneSharing} onClick={inputHandler} id="" /> 
+              Two Sharing:  <input type="radio" name="amount" value={ov.Roomsharing.TwoSharing} onClick={inputHandler} id="" /> 
+              Three Sharing:  <input type="radio" name="amount" value={ov.Roomsharing.ThreeSharing} onClick={inputHandler} id="" /> 
+              Four Sharing:  <input type="radio" name="amount" value={ov.Roomsharing.FourSharing} onClick={inputHandler} id="" />
+              Five Sharing: <input type="radio" name="amount" value={ov.Roomsharing.FiveSharing} onClick={inputHandler} id="" />
+              Six Sharing: <input type="radio" name="amount" value={ov.Roomsharing.SixSharing} onClick={inputHandler} id="" /> 
+              <h5 className='text-end text-primary'>Payable Room Fee: {radio} Rs/-</h5>
+              <i>Advance: 1000/- (Note: 50% Refundable when noticed within tenure period)</i>
+              </div>
+              
+              
+              </div>
+              <div className='d-flex justify-content-center my-3'>
+              <button className='btn btn-outline-success w-25' onClick={()=>{teleport(`/Payment/${radio}`)}} style={{boxShadow:"10px 10px 15px"}}>Proceed to Payment</button>
+              </div>
+              </div>
+              
             </div>
-            </div>
+            )
         })
       }
     </div>

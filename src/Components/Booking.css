@@ -22,6 +22,10 @@ body, html {
   animation-duration: 2s;
   box-shadow: 10px 10px 40px lightsalmon;
 }
+
+.card{
+  box-shadow: 10px 10px 40px;
+}
  
 .bg-booking {
     background-color: rgba(0,0,0,0.9); /* Black w/opacity/see-through */
