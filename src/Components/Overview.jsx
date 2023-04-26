@@ -8,7 +8,7 @@ const Overview = () => {
   const [radio, setRadio] = useState();
   var teleport = useNavigate();
   const {id} = useParams();
-  // console.log("x",x)
+  // console.log("x",x);
   // console.log(id);  
   const inputHandler=(zeta)=>{
    setRadio(zeta.target.value)
@@ -28,7 +28,7 @@ const Overview = () => {
     <button onClick={()=>{teleport('/booking')}} className='btn btn-dark mx-3 mt-2'>&#9666;View other options</button>
     <p className='display-5 text-center text-success'>Booking Process</p>
     </div><br />
-      <div style={{height:"160vh"}}>
+      <div style={{height:"180vh"}}>
     {/* <p> Map rating votes photos details about(hostel info) </p> */}
       {
         booking.map((ov,i)=>{
@@ -66,11 +66,38 @@ const Overview = () => {
               <label className='fa fa-whatsapp' style={{fontSize:"18px",color:"green"}}>Whatsapp No: <b style={{fontFamily:'arial'}}><span className="badge bg-success">{ov.Contact}</span></b></label>
               <label>Rating: <b style={{fontFamily:'serif'}}>{ov.Rating}/5</b></label>
               <label>Votes: <b style={{fontFamily:'serif'}}>{ov.Votes}</b></label>
-              <p></p>
-              <div className='d-flex justify-content-between mb-2'>
-              <i></i>
-              
-              <div className='card mt-5 p-2'>
+
+              <div className='d-flex flex-wrap'>
+              <div className='mt-5 w-50'>
+              <label><h4>Overview</h4></label>
+              <div>
+              <label className='w-50'>Preferred Tenants &nbsp;<h6 style={{fontFamily:'arial'}}>Anyone</h6></label>
+              <label className='w-50'>Food Provided 
+              <button type="button" class="btn btn-light p-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Food charges are inclusive in room rent">
+              &#8520;
+              </button>
+              <h6 style={{fontFamily:'arial'}}>Breakfast, Lunch, Dinner</h6></label><br />
+              <label className='w-50'>Minimum Stay Period <h6 style={{fontFamily:'arial'}}>None</h6></label>
+              <label className='w-50'>Notice Period <h6 style={{fontFamily:'arial'}}>10 Days</h6></label><br />
+              <label className='w-50'>Security Deposit <h6 style={{fontFamily:'arial'}}>&#8377; 1000</h6></label>
+              <label className='w-50'>Building Types <h6 style={{fontFamily:'arial'}}>Apartments</h6></label>
+              </div>
+              <label><h4>Additional Information</h4></label>
+              <div>
+              <label className='w-50'>Other Services &nbsp;<h6 style={{fontFamily:"cursive"}}>
+              Cleaning, Laundry, Cook, {ov.Facilities[8]} {ov.Facilities[9]} {ov.Facilities[10]}
+              </h6></label>
+              <label className='w-50'>One time move in charge
+              <h6 style={{fontFamily:'arial'}}>&#8377; 3,000</h6></label><br />
+              <label className='w-50'>Visitors Allowed <h6 style={{fontFamily:'arial'}}>No</h6></label>
+              <label className='w-50'>Operational Since <h6 style={{fontFamily:'arial'}}>{ov.Since}</h6></label><br />
+              <label className='w-50'>Complete Address <h6 style={{fontFamily:'arial'}}>Teachers Colony, Beside CoolJuice Corner, {ov.Area}</h6></label>
+              <label className='w-50'>PG/Hostel rules <h6 style={{fontFamily:'arial'}}>Entry of Opposite gender not allowed, No Smoking, Drinking Alcohol not Allowed</h6></label>
+              </div>
+              </div>
+
+
+              <div className='card mt-5 p-2 w-50 ms-auto'>
               <h6 className='display-6 text-primary'>Please Select your room-share type</h6><br />
               Single Sharing:<input type="radio" name="amount" value={ov.Roomsharing.OneSharing} onClick={inputHandler} id="" /> 
               Two Sharing:  <input type="radio" name="amount" value={ov.Roomsharing.TwoSharing} onClick={inputHandler} id="" /> 
@@ -81,6 +108,19 @@ const Overview = () => {
               <h5 className='text-end text-primary'>Payable Room Fee: {radio} Rs/-</h5>
               <i>Advance: 1000/- (Note: 50% Refundable when noticed within tenure period)</i>
               </div>
+
+              </div>
+              
+
+              
+
+              
+
+              <p></p>
+              <div className='d-flex justify-content-between mb-2'>
+              <i></i>
+              
+              
               
               
               </div>
