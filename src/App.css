@@ -1,10 +1,14 @@
-.App {
+/* .App {
   text-align: center;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.Link{
+  text-decoration: none;
+  
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +39,13 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.input[type="text"]{
+  display: flex;
+  justify-content: center;
+}
+.btn[type="submit"]{
+  display: flex;
+  justify-content: center;
 }

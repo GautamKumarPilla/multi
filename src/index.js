@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 //import createRoot from 'react-dom/client';
 //import store from './Shopping/store';
 //import {Provider} from 'react-redux';
@@ -11,6 +10,14 @@ import Galleria from './Gallery/Galleria';
 import Food from './Food-Recipe/Food';
 import Emoji from './Emoji/Emoji';
 import Weather from './Weather/Weather';
+import Timer from './Timer/Timer';
+import Sign from './SignIn/Sign';
+import Pages from './Pagination/Pages';
+import Pagination from './Pagination/Pagination';
+import Covid from './Covid/Covid';
+import Crypto from './Crypto/Crypto';
+//import Map from './Map/Map';
+import Movies from './Movies/Movies';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +39,38 @@ const router = createBrowserRouter([
     {
       path:'/Weather',
       element:<Weather></Weather>
+    },
+    {
+      path:'/Timer',
+      element:<Timer></Timer>
+    },
+    {
+      path:'/Pagination',
+      element:<Pages></Pages>
+    },
+    {
+      path:'/Covid',
+      element:<Covid></Covid>
+    },
+    {
+      path:'/Crypto',
+      element:<Crypto></Crypto>
+    },
+    {
+      path:'/Map',
+      element:<></>
+    },
+    {
+      path:'/Movies',
+      element:<Movies></Movies>
+    },
+    {
+      path:'/SignIn',
+      element:<></>
+    },
+    {
+      path:'/Shopping',
+      element:<></>
     }
    ]
   }

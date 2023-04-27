@@ -2,7 +2,7 @@ import React,{useEffect,useState} from 'react'
 import Layout from './Layout';
 
 const Timer = () => {
-  const endTime = new Date('April 02, 2023 00:00:00').getTime();
+  const endTime = new Date('Dec 31, 2023 00:00:00').getTime();
   const [currentTime,setcurrentTime] = useState(new Date().getTime());
   const gap = endTime - currentTime; //177670892
 
