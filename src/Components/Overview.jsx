@@ -10,6 +10,7 @@ const Overview = () => {
   const {id} = useParams();
   // console.log("x",x);
   // console.log(id);  
+  console.log();
   const inputHandler=(zeta)=>{
    setRadio(zeta.target.value)
   }
@@ -62,7 +63,7 @@ const Overview = () => {
                 <h6 class="badge rounded-pill p-2" style={{backgroundColor:"lightgreen"}}>+2</h6>
               </label>
           
-              <label>Available Beds: <b style={{fontFamily:'serif'}}>{ov.NumberOfBeds-125}</b></label>
+              <label>Available Beds: <b style={{fontFamily:'serif'}}>{ov.AvailableBeds}</b></label>
               <label className='fa fa-whatsapp' style={{fontSize:"18px",color:"green"}}>Whatsapp No: <b style={{fontFamily:'arial'}}><span className="badge bg-success">{ov.Contact}</span></b></label>
               <label>Rating: <b style={{fontFamily:'serif'}}>{ov.Rating}/5</b></label>
               <label>Votes: <b style={{fontFamily:'serif'}}>{ov.Votes}</b></label>
@@ -125,7 +126,7 @@ const Overview = () => {
               
               </div>
               <div className='d-flex justify-content-center my-3'>
-              <button className='btn btn-outline-success w-25' onClick={()=>{teleport(`/Payment/${radio}`)}} style={{boxShadow:"10px 10px 15px"}}>Proceed to Payment</button>
+              <button className='btn btn-outline-success w-25' onClick={()=>{teleport(`/Payment/${radio}/${id}/${ov.AvailableBeds}`)}} style={{boxShadow:"10px 10px 15px"}}>Proceed to Payment</button>
               </div>
               </div>
               

@@ -71,11 +71,11 @@ const router = createBrowserRouter([
         element:<Overview></Overview>
       },
       {
-        path:'/Payment/:radio',
+        path:'/Payment/:radio/:id/:ab',
         element:<Payment></Payment>
       },
       {
-        path:'/Endpage',
+        path:'/Endpage/:id/:ab',
         element:<Endpage></Endpage>
       }
 ])

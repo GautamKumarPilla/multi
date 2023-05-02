@@ -3,12 +3,14 @@ import { useNavigate, useParams } from 'react-router-dom';
 
 const Payment = () => {
   const {radio} = useParams();
+  const {id} = useParams();
+  const {ab} = useParams();
 const teleport = useNavigate();
 const confirmPayment=()=>{
   window.confirm(`                  Thank You!
   Your booking has now been confirmed and you will get future
    updates on your mobile number `);
-   teleport('/endpage');
+   teleport(`/endpage/${id}/${ab-1}`);
 }
   return (
     <div className='container mt-5'>

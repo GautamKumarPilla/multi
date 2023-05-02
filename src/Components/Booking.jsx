@@ -8,7 +8,6 @@ const Booking = () => {
   const [booking, setBooking] = useState([]);
   const [search, setSearch] = useState('');
   const [select, setSelect] = useState('');
-  const [id, setId] = useState('');
   var teleport = useNavigate();
   
 const searchFilter=(zeta)=>{

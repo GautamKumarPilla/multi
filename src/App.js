@@ -22,7 +22,7 @@ function App() {
       <Link to="/helpline" className='text-warning text-decoration-none'>&#128222; Helpline</Link>
     </div>
     </div>
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+    {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="https://nomadsworld.com/wp-content/uploads/2018/11/nomads-brisbane-hostel-dorm.jpg" style={{"height":'130vh'}} className="d-block w-100" alt="" />
@@ -43,7 +43,7 @@ function App() {
       <img src="https://pix10.agoda.net/hotelImages/282/28282739/28282739_211008113500106082730.jpg?s=1024x768" style={{'height':'130vh'}} className='d-block w-100' alt=''/>
     </div>
   </div>
-</div>
+</div> */}
         <div>
             <Outlet></Outlet>
         </div>
