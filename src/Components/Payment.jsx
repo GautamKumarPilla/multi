@@ -95,7 +95,7 @@ const confirmPayment=()=>{
        
       <div className='d-flex flex-wrap w-50'></div><br/>
       <div className=' w-50' style={{marginLeft:'400px'}}>
-        <button className='btn btn-outline-primary w-50' onClick={confirmPayment} style={{boxShadow:"10px 10px 10px"}}>Pay Now</button>
+        <button className='btn btn-primary w-50' onClick={confirmPayment}>Pay Now</button>
       </div>
     </div>
   )

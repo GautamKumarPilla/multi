@@ -4,28 +4,14 @@ body, html {
 * {
     box-sizing: border-box;
   }
- #button:hover{
-    box-shadow: 5px 5px 2px teal;
-  }
-.btn:hover[id="gojo"]{
-  box-shadow: 5px 5px 10px seagreen;
-}
 .box{
     margin-bottom: 5px;
-    border: 2px solid burlywood;
     background-color: white;
-    height: 300px;
     width: 400px;
-    box-shadow: 10px 10px 10px lightblue;
-}
-.box:hover{
-  animation-duration: 2s;
-  box-shadow: 10px 10px 40px lightsalmon;
 }
 
-.card{
-  box-shadow: 10px 10px 40px;
-}
+
+
  
 .bg-booking {
     background-color: rgba(0,0,0,0.9); /* Black w/opacity/see-through */

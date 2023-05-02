@@ -17,7 +17,7 @@ const Login =()=>{
       },
       validationSchema:Yup.object({
           username:Yup.string().max(20).required("*Username is a required field"),
-          password:Yup.string().matches(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$/,"given password is not in the required format").required("*Please enter your password we promise that we will not hack you")
+          password:Yup.string().matches(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,16}$/,"given password is not in the required format").required("*Password is a required field")
       }),
       onSubmit:(values)=>{
         console.log(values)  
@@ -41,28 +41,27 @@ const inputHandler=(z)=>{
 }
 
     return(
-    <div className="bg-text">
+    <div className="bg-text border rounded">
     <div className="mx-auto">
     <div className="mt-5">
     <div className="w-25 mx-auto" onSubmit={myform.handleSubmit}>
-        <form className="form-control bg-success-subtle">
+        <form className="form-control bg-primary-subtle">
             <h3 className=".text-warning-emphasis text-center">Login</h3>
 
-            <label htmlFor="username" className="form-lable mt-2 text-success" >Username</label>
+            <label htmlFor="username" className="form-lable mt-2 text-primary fw-bold" >Username</label>
             <input type="text" name="username" id="username" onBlur={myform.handleBlur} onChange={myform.handleChange} value={myform.values.username} placeholder="Enter username" className="form-control" />
             <p className="text-danger">{myform.touched.username && myform.errors.username}</p>
 
-            <label htmlFor="password" className="form-lable mt-2 text-danger">Password</label>
+            <label htmlFor="password" className="form-lable mt-2 text-primary fw-bold">Password</label>
             <input type="password" name="password" id="password" onBlur={myform.handleBlur} onChange={myform.handleChange} value={myform.values.password} placeholder="Enter password" className="form-control"/>
             <p className="text-danger">{myform.touched.password && myform.errors.password}</p>
 
             
             <div className="mt-2">
-            <Link to="/mail" className="text-warning text-decoration-none"><p>Forgot Password?</p></Link>
+            <Link to="/mail" className="text-decoration-none"><p>Forgot Password?</p></Link>
             </div>
             <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-info mt-2" id="liveAlertBtn" style={{boxShadow:"5px 5px 2px"}}
-              onClick={inputHandler} onSubmit={user} >Login</button>
+            <button className="btn btn-primary mt-2" id="liveAlertBtn" onClick={inputHandler} onSubmit={user} >Login</button>
             </div>
         </form>
         <Link to="/signup" className="text-light">Don't have an account yet?(SignUp)</Link>

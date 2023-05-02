@@ -54,7 +54,7 @@ const Submit=()=>{
                     {
                         (formik)=>{
                             return(
-                                <Form onSubmit={formik.handleSubmit} className="form-control" style={{backgroundColor: 'rgb(150,150,150)'}}>
+                                <Form onSubmit={formik.handleSubmit} className="form-control bg-success-subtle" >
                                     <h2 className="border-bottom text-center">Sign-Up</h2>
                                     <label htmlFor="usa" className="form-lable mt-1">Username</label>
                                     <Field className="form-control" name="Username" placeholder="Enter username or mail"></Field>
@@ -92,7 +92,7 @@ const Submit=()=>{
                                     <Field className="form-control" name='RePassword' placeholder="Re-enter password"></Field>
                                     <div className="text-danger"><small>{formik.touched.RePassword && formik.errors.RePassword}</small></div>
                                     <div style={{textAlign:'center'}}>
-                                        <button type="submit" onClick={Submit} style={{boxShadow:"5px 5px 2px black"}} className="btn btn-outline-success w-25 mx-1 mt-3">Submit</button>
+                                        <button type="submit" onClick={Submit} className="btn btn-success w-25 mx-1 mt-3">Submit</button>
                                     </div>
                                 </Form>
                             )
