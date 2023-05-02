@@ -8,7 +8,6 @@ const Crypto = () => {
   const [data, setData] = useState([]);
   const handler=(z)=>{
     setSearch(z.target.value);
-    
   }
   useEffect(()=>{
     axios('https://api.coinstats.app/public/v1/coins?skip=0&limit=1000').then(
