@@ -37,8 +37,10 @@ function App() {
             <Link to="/signup" className="text-warning text-decoration-none ms-4">
               Sign Up
             </Link>
-          
+            <Link to="/helpline" className="text-warning text-decoration-none ms-4 me-3">&#128222;Helpline</Link>
         </div>
+
+        
       </div>
       {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-inner">

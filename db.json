@@ -722,6 +722,18 @@
       "Password": "Kumar@01",
       "RePassword": "Kumar@01",
       "id": 3
+    },
+    {
+      "Username": "Whiteraven0",
+      "Fullname": "Sri Krishna Vasudeva",
+      "Mobile": "8888888888",
+      "Email": "vasudeva@email.com",
+      "Pincode": "000008",
+      "City": "Dwaraka",
+      "State": "Gujarat",
+      "Password": "Vasudev@08",
+      "RePassword": "Vasudev@08",
+      "id": 4
     }
   ]
 }

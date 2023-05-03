@@ -3,19 +3,24 @@ import axios from "axios";
 import { Field,Form, Formik } from "formik";
 import * as Yup from 'yup';
 import './Signup.css';
+import { useNavigate } from "react-router-dom";
 
 const SignUp =()=>{
     const [newUser,setNewUser] = useState({});
-    
-const Submit=()=>{
-        axios({
-            method: 'POST',
-            url: 'http://localhost:4000/Signup',
-            data: newUser
-        }).then(()=>{
-            alert("Signup Successful!")
-        });
+    var teleport = useNavigate();
+
+const inputHandler=(z)=>{
+    if(!z.target.value===''){
+            axios({
+                method: 'POST',
+                url: 'http://localhost:4000/Signup',
+                data: newUser
+            }).then(()=>{
+                console.log("Signup Successful!")
+            });
+       teleport('/login');
     }
+  }    
 
     return(
         <div className="bg-sign">
@@ -92,7 +97,7 @@ const Submit=()=>{
                                     <Field className="form-control" name='RePassword' placeholder="Re-enter password"></Field>
                                     <div className="text-danger"><small>{formik.touched.RePassword && formik.errors.RePassword}</small></div>
                                     <div style={{textAlign:'center'}}>
-                                        <button type="submit" onClick={Submit} className="btn btn-success w-25 mx-1 mt-3">Submit</button>
+                                        <button type="submit" onClick={inputHandler} className="btn btn-success w-25 mx-1 mt-3">Submit</button>
                                     </div>
                                 </Form>
                             )
